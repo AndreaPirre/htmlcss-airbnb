@@ -12,19 +12,30 @@
     z-index: 20;
     color: lightgrey;
     text-align: center;
+    font-size: 20px;
+    font-family: sans-serif;
+
 }
 
-.logo {
-    background-image: url('../img/logo.png');
-    background-size: cover;
+#logo {
+    left: 10px;
     position: absolute;
-    width: 256px;
-    height: 256px;
+    width: 200px;
 }
 
 li {
     display: inline-block;
     line-height: 80px;
+}
+
+.link {
+    margin: 20px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.link:hover {
+color: lightgrey;
 }
 
 #roma {
@@ -53,7 +64,17 @@ li {
     border: 1px solid black;
     position: relative;
     background-size: cover;
+}
 
+.visita {
+    width: 100%;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    display: none;
+    margin-top: 10px;
+    position: absolute;
+    text-shadow: none;
 }
 
 .nome{
@@ -64,4 +85,11 @@ li {
     color: white;
     font-size: 80px;
     text-shadow: 10px 10px 10px black;
+    cursor: pointer;
+}
+
+.nome:hover .visita{
+    display: block;
+    color: #fff;
+    cursor: pointer;
 }
