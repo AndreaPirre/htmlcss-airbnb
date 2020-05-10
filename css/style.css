@@ -4,17 +4,24 @@
     box-sizing: border-box;
 }
 
+/* barra nav */
+
 .menu {
     width: 100vw;
     height: 80px;
     background-color: rgba(0, 0, 0, 0.4) ;
     position: fixed;
     z-index: 20;
-    color: lightgrey;
-    text-align: center;
-    font-size: 20px;
+    /* color: lightgrey; */
+    font-size: 15px;
     font-family: sans-serif;
+    font-weight: bold;
+    /* text-align: center; */
+}
 
+.inline {
+position: absolute;
+right: 40px;
 }
 
 #logo {
@@ -23,19 +30,21 @@
     width: 200px;
 }
 
+/* tasti nav */
+
 li {
     display: inline-block;
     line-height: 80px;
 }
 
 .link {
-    margin: 20px;
+    margin: 10px;
     text-decoration: none;
     color: #fff;
 }
 
 .link:hover {
-color: lightgrey;
+    color: lightgrey;
 }
 
 #roma {
@@ -54,8 +63,9 @@ color: lightgrey;
 
 .layover {
     width: 100%;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: block;
 }
 
 .city{
@@ -64,17 +74,6 @@ color: lightgrey;
     border: 1px solid black;
     position: relative;
     background-size: cover;
-}
-
-.visita {
-    width: 100%;
-    font-size: 20px;
-    color: #fff;
-    text-align: center;
-    display: none;
-    margin-top: 10px;
-    position: absolute;
-    text-shadow: none;
 }
 
 .nome{
@@ -88,8 +87,6 @@ color: lightgrey;
     cursor: pointer;
 }
 
-.nome:hover .visita{
-    display: block;
-    color: #fff;
-    cursor: pointer;
+.city:hover .layover {
+    display: none;
 }
